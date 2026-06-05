@@ -50,3 +50,11 @@ Thumbs.db
 # Sphinx documentation build directory
 # =========================
 docs/build/
+
+# =========================
+# Builded extension
+# =========================
+game-project/addons/photon/*.dll
+game-project/addons/photon/*.so
+game-project/addons/photon/*.dylib
+game-project/addons/photon/*.pdb
