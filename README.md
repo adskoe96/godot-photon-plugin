@@ -1,5 +1,6 @@
-# Photon Cloud GDExtension
+[![Read the Docs](https://img.shields.io/readthedocs/godot-photon-plugin?style=for-the-badge)](https://godot-photon-plugin.readthedocs.io/)
 
+# Photon Cloud GDExtension
 Native C++ plugin for Godot (4.3+ branch) that integrates Photon Realtime (LoadBalancing) through GDExtension technology.
 
 ## Features
