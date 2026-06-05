@@ -1,0 +1,52 @@
+# =========================
+# Godot Engine
+# =========================
+.godot/
+game-project/.godot/
+*.translation
+export_presets.cfg
+
+# =========================
+# CMake & Build Artifacts
+# =========================
+build/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+*.cmake
+compile_commands.json
+
+# =========================
+# C++ & Visual Studio
+# =========================
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.suo
+*.db
+*.opendb
+*.ilk
+*.pdb
+*.obj
+*.idb
+*.lib
+*.exp
+
+# =========================
+# Third-Party / SDKs
+# =========================
+photon-sdk/
+godot-cpp/
+
+# =========================
+# OS Generated Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Sphinx documentation build directory
+# =========================
+docs/build/

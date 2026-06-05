@@ -1,0 +1,9 @@
+[configuration]
+entry_symbol = "photon_library_init"
+compatibility_minimum = "4.3"
+
+[libraries]
+windows.release.x86_64 = "res://addons/photon/godot_photon_plugin.dll"
+windows.debug.x86_64 = "res://addons/photon/godot_photon_plugin.dll"
+linux.release.x86_64 = "res://addons/photon/godot_photon_plugin.so"
+linux.debug.x86_64 = "res://addons/photon/godot_photon_plugin.so"

@@ -1,0 +1,45 @@
+cmake_minimum_required(VERSION 3.22)
+project(godot_photon_plugin)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+add_subdirectory(godot-cpp)
+
+set(SRC_FILES
+    src/register_types.cpp
+    src/PhotonClient.cpp
+    src/PhotonView.cpp
+    src/PhotonTransformView.cpp
+    src/PhotonRigidbodyView.cpp
+    src/PhotonAnimatorView.cpp
+)
+
+add_library(${PROJECT_NAME} SHARED ${SRC_FILES})
+
+target_link_libraries(${PROJECT_NAME} godot::cpp)
+
+if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
+    set(PHOTON_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/photon-sdk/linux")
+    set(PHOTON_LIBS 
+        "${PHOTON_ROOT}/LoadBalancing-cpp/libLoadBalancingRelease_linux.a" 
+        "${PHOTON_ROOT}/Photon-cpp/libPhotonRelease_linux.a"
+        "${PHOTON_ROOT}/Common-cpp/libCommonRelease_linux.a"
+    )
+elseif(CMAKE_SYSTEM_NAME STREQUAL "Windows")
+    set(PHOTON_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/photon-sdk/windows")
+    set(PHOTON_LIBS 
+        "${PHOTON_ROOT}/LoadBalancing-cpp/lib/LoadBalancing-cpp_vc17_release_windows_md_x64.lib" 
+        "${PHOTON_ROOT}/Photon-cpp/lib/Photon-cpp_vc17_release_windows_md_x64.lib"
+        "${PHOTON_ROOT}/Common-cpp/lib/Common-cpp_vc17_release_windows_md_x64.lib"
+        "ws2_32.lib"
+    )
+endif()
+
+target_include_directories(${PROJECT_NAME} PRIVATE
+    src
+    "${PHOTON_ROOT}"
+)
+
+target_link_libraries(${PROJECT_NAME} ${PHOTON_LIBS})
+set_target_properties(${PROJECT_NAME} PROPERTIES PREFIX "")
