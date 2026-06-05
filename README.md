@@ -1,6 +1,7 @@
-[![Read the Docs](https://img.shields.io/readthedocs/godot-photon-plugin?style=for-the-badge)](https://godot-photon-plugin.readthedocs.io/)
-
 # Photon Realtime GDExtension
+<img src="https://github.com/user-attachments/assets/663991f2-b49d-43ac-85dc-40eea8a1ffe7" alt="godot-photon-logo" width="550">
+
+## Description
 Native C++ plugin for Godot (4.3+ branch) that integrates Photon Realtime (LoadBalancing) through GDExtension technology.
 
 ## Features
@@ -44,3 +45,11 @@ cmake .. -DCMAKE_BUILD_TYPE=Release
 ```bash
 cmake --build . --config Release
 ```
+
+## Documentation
+The documentation is hosted on [Read the Docs](https://godot-photon-plugin.readthedocs.io/).
+
+![Windows](https://custom-icon-badges.demolab.com/badge/Windows-111111?logo=windows&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=c%2B%2B&logoColor=white)
+![CMake](https://img.shields.io/badge/CMake-064F8C?logo=cmake&logoColor=fff)  
