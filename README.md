@@ -19,6 +19,9 @@ Native C++ plugin for Godot (4.3+ branch) that integrates Photon Realtime (LoadB
 - `game-project/` — Test project Godot.
 - `CMakeLists.txt` — Main compile script.
 
+## Installation Instructions
+Download the [Release](https://github.com/adskoe96/godot-photon-plugin/releases/latest) archive and extract the `photon` folder into your Godot project's `res://addons/` directory.
+
 ## Build instructions
 
 **Requirements for Windows:** Visual Studio 2022 (MSVC vc17) and CMake.
