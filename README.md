@@ -35,7 +35,7 @@ Download the [Release](https://github.com/adskoe96/godot-photon-plugin/releases/
    git clone -b 4.3 https://github.com/godotengine/godot-cpp.git
 ```
 2. Download Photon C++ SDK Realtime: [Windows](https://www.photonengine.com/sdks#realtime-windows) | [Linux](https://www.photonengine.com/sdks#realtime-linux)
-3. Create `photon-sdk` folder and extract "Common-cpp", "LoadBalancing-cpp", "Photon-cpp" from Photon C++ SDK Realtime archive to: `photon-sdk/windows` or `photon-sdk/linux`
+3. Create `photon-sdk` folder and extract `Common-cpp`, `LoadBalancing-cpp`, `Photon-cpp` folders from downloaded Photon Realtime SDK archive to: `photon-sdk/windows` | `photon-sdk/linux`
 4. Make directory for build and generate project:
 ```bash
 mkdir build
