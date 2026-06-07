@@ -54,7 +54,7 @@ docs/build/
 # =========================
 # Builded extension
 # =========================
-game-project/addons/photon/*.dll
-game-project/addons/photon/*.so
-game-project/addons/photon/*.dylib
-game-project/addons/photon/*.pdb
+addons/photon/*.dll
+addons/photon/*.so
+addons/photon/*.dylib
+addons/photon/*.pdb

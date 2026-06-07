@@ -42,7 +42,7 @@ target_include_directories(${PROJECT_NAME} PRIVATE
 )
 
 target_link_libraries(${PROJECT_NAME} ${PHOTON_LIBS})
-set(PLUGIN_OUTPUT_DIR "${CMAKE_CURRENT_SOURCE_DIR}/game-project/addons/photon")
+set(PLUGIN_OUTPUT_DIR "${CMAKE_CURRENT_SOURCE_DIR}/addons/photon")
 
 set_target_properties(${PROJECT_NAME} PROPERTIES 
     PREFIX ""
