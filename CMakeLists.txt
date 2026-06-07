@@ -22,9 +22,9 @@ target_link_libraries(${PROJECT_NAME} godot::cpp)
 if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
     set(PHOTON_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/photon-sdk/linux")
     set(PHOTON_LIBS 
-        "${PHOTON_ROOT}/LoadBalancing-cpp/libLoadBalancingRelease_linux.a" 
-        "${PHOTON_ROOT}/Photon-cpp/libPhotonRelease_linux.a"
-        "${PHOTON_ROOT}/Common-cpp/libCommonRelease_linux.a"
+        "${PHOTON_ROOT}/LoadBalancing-cpp/libLoadBalancingRelease64.a" 
+        "${PHOTON_ROOT}/Photon-cpp/libPhotonRelease64.a"
+        "${PHOTON_ROOT}/Common-cpp/libCommonRelease64.a"
     )
 elseif(CMAKE_SYSTEM_NAME STREQUAL "Windows")
     set(PHOTON_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/photon-sdk/windows")
