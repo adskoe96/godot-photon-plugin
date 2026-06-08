@@ -4,6 +4,9 @@
 ## Description
 Native C++ plugin for Godot (4.3+ branch) that integrates Photon Realtime (LoadBalancing) through GDExtension technology.
 
+## Installation Instructions
+Download the archive from the [latest GitHub release](https://github.com/adskoe96/godot-photon-plugin/releases/latest) or the [Godot Asset Store](https://store.godotengine.org/asset/adsk-dev/photon-realtime-gdextension/), and extract the `photon` folder into your Godot project's `res://addons/` directory.
+
 ## Features
 - Connection to Master Server and Lobby system.
 - Matchmaking API (Create, Join, JoinRandom, JoinOrCreate).
@@ -20,9 +23,6 @@ Native C++ plugin for Godot (4.3+ branch) that integrates Photon Realtime (LoadB
 - `src/` — Source code of GDExtension plugin.
 - `game-project/` — Test project Godot.
 - `CMakeLists.txt` — Main compile script.
-
-## Installation Instructions
-Download the [Release](https://github.com/adskoe96/godot-photon-plugin/releases/latest) archive and extract the `photon` folder into your Godot project's `res://addons/` directory.
 
 ## Build instructions
 
